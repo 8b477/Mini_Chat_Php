@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: lightgoldenrodyellow;
+    background-image: url("../img/blabla.jpg");
+    background-size: cover;
+    color: wheat;
+
+}
+
+h1{
+    text-align: center;
+    height: 5%;
+    background-color: black;
+    width: 26.4%;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*
+=======================================>MAIN CONTAINER<===================================
+*/
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid black 5px;
+    width: 26vw;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+/*
+=======================================>TOP WRAPPER<======================================
+*/
+#wrapper-top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+}
+
+
+/*
+=======================================>BOTTOM WRAPPER<===================================
+*/
+#wrapper-bottom{
+    display: flex;
+    align-items: center;
+}
+/*
+=======================================>INPUT FORMULAIRE<===================================
+*/
+#id-form-message{
+    height: 13vh;
+    width: 22.3vw;
+    resize: none;
+    margin-bottom: -5.5px;
+    padding: 1.2rem;
+}
+
+#send{
+    position:absolute;
+    width: 12.5%;
+    height: 10%;
+}
+
+#send:hover{
+    background-color: green;
+    color: gold;
+}
+
+.content{
+    display: inline;
+}
+
+.full-content{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#author-id{
+    width: 101%;
+    padding-left: 43%;
+}
+
+.date{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgba(189, 112, 23, 0.76);
+
+}
+
+.author{
+    text-decoration-line: underline;
+    font-weight: bold;
+    color: rgba(189, 150, 23, 0.91);
+}
+
