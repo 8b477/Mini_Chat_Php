@@ -3,8 +3,9 @@
 namespace App;
 
 use App\Model\Db;
+use App\Model\Manager\Chat_messageManager;
 
-require_once __DIR__ . '/includes.php';
+require_once '../includes.php';
 
 
 

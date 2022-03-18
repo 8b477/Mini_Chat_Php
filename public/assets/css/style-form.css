@@ -12,7 +12,6 @@ body{
     background-image: url("../img/blabla.jpg");
     background-size: cover;
     color: wheat;
-
 }
 
 h1{
@@ -32,7 +31,7 @@ h1{
     justify-content: center;
     flex-direction: column;
     border: solid black 5px;
-    width: 26vw;
+    width: 26.4%;
     margin: 0 auto;
     background: rgba(0,0,0,0.8);
     backdrop-filter: saturate(180%) blur(10px);
@@ -60,8 +59,8 @@ h1{
 =======================================>INPUT FORMULAIRE<===================================
 */
 #id-form-message{
-    height: 13vh;
-    width: 22.3vw;
+    height: 8rem;
+    width: 42rem;
     resize: none;
     margin-bottom: -5.5px;
     padding: 1.2rem;
@@ -69,8 +68,8 @@ h1{
 
 #send{
     position:absolute;
-    width: 12.5%;
-    height: 10%;
+    width: 6rem;
+    height: 8rem;
 }
 
 #send:hover{
@@ -105,4 +104,5 @@ h1{
     font-weight: bold;
     color: rgba(189, 150, 23, 0.91);
 }
+
 

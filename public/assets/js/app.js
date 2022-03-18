@@ -1,11 +1,11 @@
 
 //Affichage des message
 function getMessage(){
-    const requeteAjax = new XMLHttpRequest();
-    requeteAjax.open("GET", 'handler.php');
+    const requestAjax = new XMLHttpRequest();
+    requestAjax.open("GET", './handler.php');
 
-    requeteAjax.onload = function (){
-        const resultat = JSON.parse(requeteAjax.responseText);
+    requestAjax.onload = function (){
+        const resultat = JSON.parse(requestAjax.responseText);
         const html = resultat.reverse().map(function(message){
             return`
             <div class="full-content">
@@ -24,7 +24,7 @@ function getMessage(){
         messages.innerHTML = html;
         messages.scrollTop = messages.scrollHeight;
     }
-    requeteAjax.send();
+    requestAjax.send();
 }
 
 
@@ -37,19 +37,19 @@ function postMessage(e){
     data.append('author', author.value);
     data.append('content', content.value);
 
-    const requeteAjax =  new XMLHttpRequest();
-    requeteAjax.open('POST', 'handler.php?task=write');
+    const requestAjax =  new XMLHttpRequest();
+    requestAjax.open('POST', 'handler.php?task=write');
 
-    requeteAjax.onload = function (){
+    requestAjax.onload = function (){
         content.value = '';
         content.focus();
         getMessage();
     }
-    requeteAjax.send(data);
+    requestAjax.send(data);
 }
 
 document.querySelector('form').addEventListener('submit', postMessage);
 
-const interval = window.setInterval(getMessage, 1500);
+//const interval = window.setInterval(getMessage, 1500);
 
 getMessage();

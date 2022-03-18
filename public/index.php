@@ -1,10 +1,6 @@
 <?php
-
-use App\Model\Db;
-
-require __DIR__ . '/includes.php';
+require '../includes.php';
 ?>
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -12,7 +8,7 @@ require __DIR__ . '/includes.php';
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/assets/css/style-form.css">
+    <link rel="stylesheet" href="./assets/css/style-form.css">
     <title>Mini Chat</title>
 </head>
 <body>
@@ -37,15 +33,16 @@ require __DIR__ . '/includes.php';
 
         <!-- Section off display message send and receive -->
         <div id="wrapper-bottom">
-            <form action="/handler.php?task=write" method="POST">
+            <form action="/public/handler.php?task=write" method="POST" id="main-form">
                 <input type="text" name="author" id="author-id" placeholder="username">
-                <textarea name="content" id="id-form-message" cols="100" rows="15" placeholder="Enter your message !"></textarea>
+                <textarea name="content" id="id-form-message" cols="100" rows="10" placeholder="Enter your message !"></textarea>
                 <input type="submit" value="Send" name="btn-form-validate" id="send">
             </form>
         </div>
         <!-- End off my #container -->
     </div>
 
-    <script src="/assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
+
