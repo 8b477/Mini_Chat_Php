@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Model\Db;
+use App\Model\Entity\Chat_message;
 use App\Model\Manager\Chat_messageManager;
 
 require_once '../includes.php';
@@ -39,7 +40,8 @@ function postMessage()
         ]);
         return;
     }
-
+else{
+}
     $author = $_POST['author'];
     $content = $_POST['content'];
 
